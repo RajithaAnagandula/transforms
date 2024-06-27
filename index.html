@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         #cards{
+            background-color: rgb(26, 19, 19);
+            color: white;
+            padding: 10px;
+            width: 100%;
+            
+        }
+        .cards{
+            display: inline-flex;
+            
+        }
+        button{
+            width: 300px;
+            height: 50px;
+           margin: 10px;
+            border: 0px;
+            padding: 10px;
+            font-size: large;
+            background-color: black;
+            color:white;
+            transition-duration: 0.3s;
+            transition: 0.3s;
+        }
+        
+        img{
+            color: beige;
+            background-color: darkseagreen;
+            position: relative;
+            top: 100px;
+            right: 800px;
+           
+        }
+       .Rotate:hover~.main img{
+            transform: rotate(100deg); 
+        }
+        .Skew:hover~.main img{
+            transform: skewX(20deg);
+        }
+        .Scale:hover~.main img{
+            transform: scale(1.2);
+        }
+        .Translate:hover~.main img{
+            transform: translateX(50px);
+        }
+    </style>
+</head>
+<body>
+    
+        <center><h1 id="cards">transform Example</h1><br></center>
+<div class="cards">
+    <button class="Rotate">Rotate</button>
+    <button class="Skew">Skew </button>
+    <button class="Scale">Scale</button>
+    <button class="Translate">Translate</button>
+
+    <div class="main">
+        <center><img src="https://tse4.mm.bing.net/th?id=OIP.6dgkMLwKZAmN2nFZDYzBdAAAAA&pid=Api&P=0&h=180"></center>
+    </div>
+</div>
+
+</body>
+</html>
